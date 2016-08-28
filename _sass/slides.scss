@@ -59,11 +59,9 @@ Transitions
   display: none;
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   text-transform: uppercase;
-  position: absolute;
+  position: relative;
   top: 0px;
   text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
   color: white;
   font-size: 2rem;
   font-weight: 600  ;
@@ -155,10 +153,14 @@ section.module.parallax h1 {
   text-transform: uppercase;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   opacity: 1;
-  a, a:visited, a:hover, a:active {
+  a, a:visited {
     text-decoration: none;
-    color: #060504;
+    color: inherit;
   }
+}
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 section.module.parallax-1 {
