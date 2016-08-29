@@ -59,3 +59,48 @@ table {
   margin: 0 auto;
   max-width: 960px;
 }
+
+.header {
+	padding-top: 20px;
+	height: 50px;
+	width: 100%;
+}
+.logo {
+	padding: 20px 0 0 20px;
+	.logo-text {
+		width: 100%;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 600;
+		color: white;
+		letter-spacing: 0.7rem;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.5) ;
+	}
+}
+@include keyframes(fade-in-half-to-full) {
+	0% {opacity: 0.5;}
+	100% {opacity: 1;}
+}
+
+.static-nav {
+	padding: 22% 40px 0 0;
+	.nav-text {
+		padding: 30px 0 30px 0;
+		width: 100%;
+		display: block;
+		text-align: right;
+		font-size: 1.5rem;
+		font-weight:500;
+		color: white;
+		letter-spacing: .3rem;
+		opacity: 0.5;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.5) ;
+		transition: opacity .5s ease-in-out, font-weight .5s ease-in-out;
+		-moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+	}
+	.nav-text:hover{
+		opacity: 1;
+		font-weight: 700;
+	}
+}
