@@ -110,10 +110,15 @@ Transitions
 section.module.parallax {
   position: relative;
   overflow: hidden;
+  background-position-x: 50%;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
+  //iphone 6+ screen
+  @media (max-width: 736px) {
+       background-attachment: scroll;
+  }
 }
 .titlepage {
     height: 100vh;
