@@ -178,6 +178,9 @@ a, a:visited {
   position: relative;
   background-size: contain;
   background-repeat: no-repeat;
+  p {
+    margin-bottom: 1.3rem;
+  }
 }
 
 .module.content::after {
@@ -231,6 +234,16 @@ section.module.project.tweather {
 }
 section.module.parallax h1 {
   font-size: 2rem;
+}
+
+
+.big-icon {
+	color: $highlight-color;
+	font-size: 2.5rem;
+}
+
+.centered-content {
+  text-align: center;
 }
 html {
   font-size: 65%;

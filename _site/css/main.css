@@ -68,6 +68,7 @@ section.module.parallax { position: relative; overflow: hidden; background-posit
 a, a:visited { text-decoration: none; }
 
 .module.content { font: 400 1.3rem sans-serif, "Lato"; color: #777; text-align: justify; position: relative; background-size: contain; background-repeat: no-repeat; }
+.module.content p { margin-bottom: 1.3rem; }
 
 .module.content::after { content: ""; background-size: contain; opacity: 0.5; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; -webkit-filter: grayscale(1); /* Old WebKit */ filter: grayscale(1); }
 
@@ -83,6 +84,10 @@ section.module.project.mixmatch { background-image: url("../images/mixmatchmocku
 section.module.project.tweather { background-image: url("../images/tweathermockup-opt.jpg"); }
 
 section.module.parallax h1 { font-size: 2rem; }
+
+.big-icon { color: #093145; font-size: 2.5rem; }
+
+.centered-content { text-align: center; }
 
 html { font-size: 65%; }
 
@@ -120,3 +125,7 @@ html { font-size: 65%; }
 .back-to-top { background: none; margin: 0; position: fixed; bottom: 0; right: 0; z-index: 100; display: none; text-decoration: none; color: #f2f3f4; border-radius: 15%; background-color: #093145; }
 
 .back-to-top i { font-size: 3rem; }
+
+b { font-weight: bold; }
+
+.footer-info { border-top: 0.5px solid #093145; padding-top: 5px; text-align: center; font-size: 1rem; color: #777; }

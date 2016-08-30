@@ -15,12 +15,12 @@ $(document).ready(function() {
 		event.preventDefault();
 		$('html, body').animate({scrollTop: 0}, duration);
 		return false;
-	})
+	});
 });
 
 
 //Anchor scrolling effect
-$(document).on('click', 'a', function(event){
+$(document).on('click', 'a.scrolllink', function(event){
     event.preventDefault();
 
     $('html, body').animate({
