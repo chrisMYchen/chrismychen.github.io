@@ -6,13 +6,12 @@ layout: bare
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>{% if page.html_title %}{{ page.html_title }} • {% endif %}Christopher Chen</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
+  <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
   <link rel="stylesheet" href = "/css/main.css">
   <link rel="alternate" type="application/atom+xml" title="Upcoming Events" href="/atom.xml">
 
   <!-- Latest compiled and minified JavaScript -->
-
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
   <script src="../assets/modernizr.js"></script>
   <script src="../assets/application.js"></script>
@@ -21,5 +20,8 @@ layout: bare
 
 <body {% if page.body_class %}class="{{ page.body_class }}"{% endif %} data-spy="scroll" data-target="#toc">
   {{content}}
+  <a href="#" class="back-to-top" style="display: inline;">
+    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+  </a>
 </body>
 </html>

@@ -105,6 +105,9 @@ table {
 			transition: opacity .3s ease-in-out, font-weight .5s ease-in-out;
 			-moz-transition: opacity .3s ease-in-out;
 			-webkit-transition: opacity .3s ease-in-out;
+		  @media screen and (min-width: 100px) and (max-width: 760px) {
+				opacity: 1;
+			}
 		}
 		.nav-text:hover{
 			opacity: 1;
@@ -141,4 +144,24 @@ table {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+.back-to-top {
+	background: none;
+	margin: 0;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 100;
+	display: none;
+	text-decoration: none;
+	color: rgb(242,243,244);
+	border-radius:15%;
+	background-color: $highlight-color;
+}
+
+
+
+.back-to-top i {
+  font-size: 3rem;
 }

@@ -3,6 +3,8 @@
 /*================================
 Transitions
 ========================================*/
+
+$highlight-color: rgba(9,49,69,1);
 @mixin animation($animate...) {
     $max: length($animate);
     $animations: '';
@@ -49,7 +51,7 @@ Transitions
 
 @keyframes fadein {
   from {opacity: 0;}
-  to {opacity: .7;}
+  to {opacity: 1;}
 }
 
 @include keyframes(fade-in-to-nine) {
@@ -70,7 +72,7 @@ Transitions
   padding: .5rem 0 .5rem 0;
   @include animation(fade-in-to-nine 1.5s 1);
   opacity: 0.9;
-  background-color: #7fafe9;
+  background-color: $highlight-color;
   border-radius: 5px;
   display: none;
   font-family: $base-font-family;
@@ -78,7 +80,7 @@ Transitions
   position: relative;
   top: 0px;
   text-align: center;
-  color: white;
+  color: rgb(242,243,244);
   font-size: 1.5rem;
   font-weight: 600  ;
   letter-spacing: .2rem;
@@ -118,14 +120,13 @@ section.module.parallax {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  @media screen and (min-width: 320px) and (max-width: 760px) {
+  @media screen and (min-width: 100px) and (max-width: 760px) {
        background-attachment: scroll;
   }
 }
 .titlepage {
     height: 100vh;
     position:relative;
-    background: #dddfe3;
     z-index:1;
   h1 {
     color: black;
@@ -147,9 +148,9 @@ section.module.parallax {
    height: 100%;
    z-index: -1;
    animation-name: fadein;
-   opacity: 0.7;
+   opacity: 1;
    animation-duration: 3s;
-   background-image: url('../images/piano1_name_font2.png');
+   background-image: url('../images/piano1_name_font2-opt.jpg');
    background-repeat: no-repeat;
    background-position: 50% 0;
    -webkit-background-size: cover;
@@ -168,7 +169,6 @@ section.module.parallax {
 
 a, a:visited {
   text-decoration: none;
-  color: inherit;
 }
 
 .module.content {
@@ -201,13 +201,34 @@ a, a:visited {
   letter-spacing: .3rem;
   text-transform: uppercase;
   font-size: 1.6rem;
-  color: #111;
-}
-section.module.project {
-  height: 50vh;
-  background-image: url("../img/demo/small/2.jpg");
+  color: $highlight-color;
 }
 
+section.module.project {
+    opacity: 1;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      color: rgb(242,243,244);
+      padding: 6px;
+      opacity: .8;
+      background-color: $highlight-color;
+      border-radius: 2px;
+      font-size: 4rem;
+      text-align: center;
+    }
+}
+section.module.project.trtl {
+  background-image: url("../images/trtlappmockup-opt.jpg");
+}
+section.module.project.mixmatch {
+    background-image: url("../images/mixmatchmockup-opt.jpg");
+}
+section.module.project.tweather {
+  background-image: url("../images/tweathermockup-opt.jpg");
+}
 section.module.parallax h1 {
   font-size: 2rem;
 }
