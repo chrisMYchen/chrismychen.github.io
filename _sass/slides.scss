@@ -210,9 +210,14 @@ a, a:visited {
 section.module.project {
     opacity: 1;
     height: 50vh;
-    display: flex;
+
     flex-direction: column;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    display: flex;
     justify-content: center;
+
+
     h1 {
       color: rgb(242,243,244);
       padding: 6px;
