@@ -122,8 +122,6 @@ section.module.parallax {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-
-  //iphone 6+ screen
   @media screen and (min-width: 320px) and (max-width: 760px) {
        background-attachment: scroll;
   }
@@ -167,6 +165,11 @@ section.module.parallax {
    -o-background-size: cover;
    background-size: cover;
    background-attachment: fixed
+
+   //iphone 6+ screen
+   @media screen and (min-width: 320px) and (max-width: 760px) {
+        background-attachment: scroll;
+   }
 }
 
 
