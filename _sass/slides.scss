@@ -221,6 +221,9 @@ section.module.project {
       border-radius: 2px;
       font-size: 4rem;
       text-align: center;
+      a, a:visited {
+        color: rgb(242,243,244);
+      }
     }
 }
 section.module.project.trtl {
