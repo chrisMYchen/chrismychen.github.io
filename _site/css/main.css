@@ -56,8 +56,8 @@ Transitions
 
 /* ============================================================ SECTIONS
 ============================================================ */
-section.module.parallax { position: relative; overflow: hidden; background-position-x: 50%; background-position: center; background-attachment: fixed; background-size: cover; background-repeat: no-repeat; }
-@media (max-width: 736px) { section.module.parallax { background-attachment: scroll; } }
+section.module.parallax { position: relative; overflow: hidden; background-position-x: 50%; background-position: center; background-attachment: fixed; -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; background-size: 100% 100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-repeat: no-repeat; }
+@media screen and (min-width: 320px) and (max-width: 760px) { section.module.parallax { background-attachment: scroll; } }
 
 .titlepage { height: 100vh; position: relative; background: #dddfe3; z-index: 1; }
 .titlepage h1 { color: black; font-size: 1rem; font-weight: 700; text-align: center; text-transform: uppercase; text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); opacity: 1; }
