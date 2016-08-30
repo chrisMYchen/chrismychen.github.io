@@ -73,7 +73,7 @@ Transitions
   background-color: #7fafe9;
   border-radius: 5px;
   display: none;
-  font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+  font-family: $base-font-family;
   text-transform: uppercase;
   position: relative;
   top: 0px;
@@ -166,7 +166,7 @@ a, a:visited {
 }
 
 .module.content {
-  font: 400 1.3rem "Lato", sans-serif;
+  font: 400 1.3rem sans-serif, "Lato";
   color: #777;
   text-align: justify;
   position: relative;
