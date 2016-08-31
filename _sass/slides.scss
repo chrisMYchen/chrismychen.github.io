@@ -210,7 +210,7 @@ a, a:visited {
 section.module.project {
     opacity: 1;
     height: 50vh;
-
+    -webkit-flex-direction: column;
     flex-direction: column;
     display: -webkit-flex;
     -webkit-justify-content: center;
