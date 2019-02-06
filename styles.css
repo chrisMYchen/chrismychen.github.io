@@ -490,9 +490,9 @@ body {
     opacity: 1;
     font-size: 1rem;
     top: 0;
-    left: 0;
+    left: 5%;
     height: 100%;
-    width: 100%;
+    width: 90%;
     -webkit-transform: none;
     transform: none;
   }
@@ -508,15 +508,11 @@ body {
 
 .box .hidden a:after {
     opacity: 0;
-    position:absolute;
+    position:relative;
     content: attr(data-text);
-    top: -2rem;
-    left: 0;
-    right: 0;
-    height: 5rem;
     text-align: center;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
 }
 
 
