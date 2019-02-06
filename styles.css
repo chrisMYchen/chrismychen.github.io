@@ -445,10 +445,9 @@ body {
     z-index: 1;
     border-radius: 2px;
     border-bottom-right-radius: 60px 5px;
-    margin: 5px;
-    width: 275px;
-    height:275px;
-    padding: .5rem;
+    width: 280px;
+    height:280px;
+   
     /* padding-top:35px; */
     transition: transform .15s;
     display: flex;
@@ -459,12 +458,22 @@ body {
     font-family: 'Just Me Again Down Here', cursive;
 }
 
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 300px;
+    height: 300px;
+    margin: 10px 0 10px 0;
+  }
+}
+
 .box .hidden {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 85%;
+    width: 85%;
     opacity: 0;
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
@@ -480,7 +489,12 @@ body {
     position: relative;
     opacity: 1;
     font-size: 1rem;
-
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: none;
+    transform: none;
   }
 }
 
