@@ -468,12 +468,10 @@ body {
 
 .box .hidden {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    height: 85%;
-    width: 85%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
     opacity: 0;
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
@@ -490,9 +488,9 @@ body {
     opacity: 1;
     font-size: 1rem;
     top: 0;
-    left: 0;
+    left: 5%;
     height: 100%;
-    width: 100%;
+    width: 90%;
     -webkit-transform: none;
     transform: none;
   }
@@ -503,20 +501,16 @@ body {
 }
 
 .box .hidden a:after {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .box .hidden a:after {
     opacity: 0;
-    position:absolute;
+    position:relative;
     content: attr(data-text);
-    top: -2rem;
-    left: 0;
-    right: 0;
-    height: 5rem;
     text-align: center;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
 }
 
 
